@@ -1,0 +1,93 @@
+div#courseViewBox {
+    display: flex;
+    flex-direction: row;
+    padding-right: 20px;
+    gap: 20px;
+}
+div#courseViewBox .postbox-header {
+    height: 40px;
+    padding: 0px 12px;
+}
+.pfd_fields{
+    width: 80%;
+}
+#savebtn .postbox {
+    min-width: 100%;
+}
+#savebtn{
+    width: 20%;
+}
+.pfd_fields .postbox-container {
+    width: 100%;
+}
+.addnew_box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.pfd_post {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.pfd_post_select{
+    max-width: 200px !important;
+    min-width: 200px;
+}
+
+.pfd_course_post table {
+    margin: 0;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+.pfd_course_post table tr th, .pfd_course_post table tr td{
+    padding: 5px 0;
+}
+span.lineStatus {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ddddddbd;
+}
+span.lineStatus.active{
+    background-color: #0ee90e !important;
+}
+span.lineStatus.deactive{
+    background-color: red !important;
+}
+
+.pfd_posts {
+    margin-bottom: 20px;
+}
+
+.select2-container .select2-selection--single {
+    height: 30px;
+}
+span.delete_pfd_post {
+    transform: rotate(45deg);
+    font-size: 30px;
+    line-height: 22px;
+    font-weight: bold;
+    color: red;
+    cursor: pointer;
+    user-select: none;
+}
+div#pfd_loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    background: #0000;
+    backdrop-filter: blur(2px);
+    z-index: 99999;
+    display: none;
+}
